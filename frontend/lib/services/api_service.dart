@@ -5,7 +5,7 @@ import '../models/obat_model.dart';
 
 class ApiService {
   // Gunakan 'static const' agar nilai IP tidak berubah secara tidak sengaja
-  static const String baseUrl = "http://192.168.102.239:8000/api";
+  static const String baseUrl = "http://localhost:8000/api";
 
   // --- 1. OTENTIKASI ---
 
