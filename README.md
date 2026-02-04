@@ -47,7 +47,7 @@ Agar aplikasi dapat berjalan lancar antara HP Android dan Laptop/Server, ikuti l
     * Edit `.env` sesuaikan dengan database Anda:
         ```env
         DB_CONNECTION=mysql
-        DB_HOST=127.0.0.1
+        DB_HOST=127.0.0.1 
         DB_PORT=3306
         DB_DATABASE=dbdata-obat
         DB_USERNAME=root
