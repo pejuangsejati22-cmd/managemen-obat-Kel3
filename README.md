@@ -42,7 +42,7 @@ Agar aplikasi dapat berjalan lancar antara HP Android dan Laptop/Server, ikuti l
     ```
 
 3.  **Konfigurasi Database:**
-    * Buat database baru di phpMyAdmin (misal: `db_motor`).
+    * Buat database baru di phpMyAdmin (misal: `dbdata_obat`).
     * Copy file `.env.example` menjadi `.env`.
     * Edit `.env` sesuaikan dengan database Anda:
         ```env
