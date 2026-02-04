@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      // CheckAuth menggunakan const karena constructor-nya const
+
       home: const CheckAuth(),
     );
   }
