@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Feb 2026 pada 05.46
+-- Waktu pembuatan: 04 Feb 2026 pada 09.00
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -113,8 +113,7 @@ CREATE TABLE `obats` (
 --
 
 INSERT INTO `obats` (`idobat`, `nama`, `stok`, `harga`, `created_at`, `updated_at`) VALUES
-('001', 'Paracetamol', 10, 15000.00, '2026-02-04 04:33:59', '2026-02-04 04:33:59'),
-('002', 'Tramadol', 15, 15000.00, '2026-02-04 04:43:03', '2026-02-04 04:43:03');
+('001', 'Paracetamol', 10, 15000.00, '2026-02-04 07:24:10', '2026-02-04 07:24:10');
 
 -- --------------------------------------------------------
 
@@ -171,7 +170,9 @@ INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `n
 (2, 'App\\Models\\User', 1, 'api-token', '5595b04622023e92f52ab45ff4c6c708e61c8e8f8bdecdf236fdb7cf011a516b', '[\"*\"]', NULL, NULL, '2026-02-04 04:07:28', '2026-02-04 04:07:28'),
 (3, 'App\\Models\\User', 1, 'api-token', 'a9a3a1a6a964c71dc1447e675863a09001dc11e8c1f040bb37263cf4ddf9b2ad', '[\"*\"]', NULL, NULL, '2026-02-04 04:07:49', '2026-02-04 04:07:49'),
 (4, 'App\\Models\\User', 1, 'api-token', '2d1fdb0abc62640591219944fd121a4721ec5118aa49701cdaa968332a762270', '[\"*\"]', NULL, NULL, '2026-02-04 04:33:45', '2026-02-04 04:33:45'),
-(5, 'App\\Models\\User', 1, 'api-token', '0138732402ad4596bcb543b5201030883842214bb4464ecda67f9eda8373859e', '[\"*\"]', NULL, NULL, '2026-02-04 04:42:46', '2026-02-04 04:42:46');
+(5, 'App\\Models\\User', 1, 'api-token', '0138732402ad4596bcb543b5201030883842214bb4464ecda67f9eda8373859e', '[\"*\"]', NULL, NULL, '2026-02-04 04:42:46', '2026-02-04 04:42:46'),
+(6, 'App\\Models\\User', 2, 'api-token', '81c9299ec0b493ccdc6d57a6371d586400df3891696e2573cffeb5d1e2aefd80', '[\"*\"]', NULL, NULL, '2026-02-04 07:23:51', '2026-02-04 07:23:51'),
+(7, 'App\\Models\\User', 1, 'api-token', 'f65c11651be4c68892c5da9160a6f99b24233d6b3c4816eb123658259b98eb22', '[\"*\"]', NULL, NULL, '2026-02-04 07:30:05', '2026-02-04 07:30:05');
 
 -- --------------------------------------------------------
 
@@ -195,7 +196,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'bagus', 'pejuang@gmail.com', NULL, '$2y$12$tlJ/ipHRahNc0K1JJCYuF.n8/731VDcK5MU69WEhJzdq8.eMJeXWS', NULL, '2026-02-04 04:01:27', '2026-02-04 04:01:27');
+(1, 'Bagus', 'Pejuangsejati22@gmail.com', NULL, '$2y$12$DYAPUFXwb6TP0Z/vro4Sk.fcD29u7RrlDdZq85gfI4PATTg7aB0Fi', NULL, '2026-02-04 07:22:55', '2026-02-04 07:22:55');
 
 --
 -- Indexes for dumped tables
@@ -279,13 +280,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT untuk tabel `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
