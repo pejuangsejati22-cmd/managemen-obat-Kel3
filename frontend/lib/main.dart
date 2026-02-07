@@ -142,7 +142,7 @@ class _CheckAuthState extends State<CheckAuth> with SingleTickerProviderStateMix
               ),
               const SizedBox(height: 30),
               const Text(
-                "PharmaTrack APP",
+                "YERBOT MANAGER APP",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 32,
